@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #3b3b3b !important;
+        }
+
+        .btn-group-lg>.btn,
+        .btn-lg {
+            background-color: rgb(255, 238, 0, .4);
+            color: #f8f9fa;
+        }
+
+        .hero {
+            background: url('1.jpg') no-repeat center center/cover;
+            color: white;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        #sobre {
+            background-color: #f8f9fa;
+        }
+
+        #projetos .card {
+            transition: transform 0.3s;
+        }
+
+        #projetos .card:hover {
+            transform: translateY(-10px);
+        }
+
+        #contato {
+            background-color: #343a40;
+            color: white;
+        }
+
+        #contato .form-control {
+            background-color: #495057;
+            color: white;
+            border: none;
+        }
+
+        #contato .btn {
+            background-color: #ffee00;
+            border: none;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre Mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção de Herói -->
+    <section class="hero text-center">
+        <div class="container">
+            <h1>Bem-vindo ao Meu Portfólio!</h1>
+            <p>Desenvolvedor Web e Designer Criativo.</p>
+            <a href="#projetos" class="btn btn-light btn-lg mt-4">Veja Meus Projetos</a>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre">
+        <div class="container text-center">
+            <h2>Sobre Mim</h2>
+            <p class="lead">Sou desenvolvedor com foco em criação de sites modernos e responsivos, apaixonado por design
+                minimalista e eficiente.</p>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos">
+        <div class="container">
+            <h2 class="text-center mb-5">Meus Projetos</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="2.jpg" class="card-img-top" alt="Projeto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 1</h5>
+                            <p class="card-text">Projeto com foco em design responsivo.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="3.jpg" class="card-img-top" alt="Projeto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 2</h5>
+                            <p class="card-text">Uma aplicação moderna com JavaScript e Bootstrap.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="4.jpg" class="card-img-top" alt="Projeto 3">
+                        <!-- <img src="https://via.placeholder.com/350" class="card-img-top" alt="Projeto 3"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 3</h5>
+                            <p class="card-text">Projeto focado em acessibilidade e performance web.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2 class="text-center mb-5">Entre em Contato</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
